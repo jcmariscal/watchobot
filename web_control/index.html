@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>WATCHOBOT CONTROL</title>
+	<script src="jquery.js"></script>
+	<script src="myscript.js"></script>
+
+</head>
+
+<body>
+
+	<div id="main">
+		<div id="commands" style="position: absolute; top: 50px; left:35%; width:65%">
+	
+			<form name="myform2" action="" method="GET">
+				Watchobot IP Address:
+				<input type="text" name="inputbox" Value="192.168.2.106">
+				<input type="button" name="button3" Value="Test" onClick="testarArduino(this.form)">
+			</form>
+
+			<img src="images/keyboard.png" style="margin-left:100px; margin-top:50px;">
+            <p>Keys for the robot:</p>
+            <ul>
+                <li><b>Up arrow:</b> move forward.</li>
+                <li><b>Down arrow:</b> move backwards.</li>
+                <li><b>Right arrow:</b> move right.</li>
+                <li><b>Left arrow:</b> move left.</li>
+                <li><b>q:</b> pivot right.</li>
+                <li><b>w:</b> pivot left.</li>
+                <li><b>i:</b> increase speed.</li>
+                <li><b>1:</b> set micro-step to full step.</li>
+                <li><b>2:</b> set 1/2 micro-step.</li>
+                <li><b>4:</b> set 1/4 micro-step.</li>
+                <li><b>8:</b> set 1/8 micro-step.</li>
+                <li><b>r:</b> reset to default values.</li>
+            </ul>
+			<form name="formRPM" action="" method="GET">
+				Watchobot speed in RPM
+				<input type="text" name="inputbox" Value="30">
+				<input type="button" name="button4" Value="Set RPM" onClick="setRPM(this.form)">
+			
+			
+	
+	</div>
+</body>
+</html>
