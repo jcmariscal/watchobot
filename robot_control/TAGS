@@ -1,0 +1,39 @@
+
+A4988.h,31
+#define A4988_HA4988_H11,285
+
+BasicStepperDriver.h,430
+#define STEPPER_DRIVER_BASE_HSTEPPER_DRIVER_BASE_H11,299
+#define PIN_UNCONNECTED -1PIN_UNCONNECTED16,442
+#define IS_CONNECTED(pin) (pin != PIN_UNCONNECTED)IS_CONNECTED17,469
+#define STEP_PULSE(steps, microsteps, rpm) (60*1000000L/steps/microsteps/rpm)STEP_PULSE23,651
+inline void microWaitUntil(unsigned long target_micros){microWaitUntil25,730
+#define DELAY_MICROS(us) microWaitUntil(micros() + us)DELAY_MICROS29,840
+
+main.ino,853
+#define DIR DIR20,386
+#define STEP STEP21,407
+#define DIR2 DIR222,429
+#define STEP2 STEP223,459
+#define STEPMOTOR STEPMOTOR25,516
+int g_RPM = 30;g_RPM26,538
+int g_microstep = 16;g_microstep27,554
+int g_motorState =3; //non-movement stateg_motorState31,686
+int i = 0;i32,728
+int g_j = 0;g_j33,739
+#define DEBUG DEBUG38,799
+String ssid =  "SSID"; // add ssid of the wifi heressid39,818
+String pass = "pass"; // add password of the wifi herepass40,870
+void setup() {setup55,1344
+void loop() {loop71,1660
+void stepperInit(unsigned int rpm, unsigned int microstep){stepperInit113,2623
+void moveMotor(int motorState){moveMotor137,3165
+String sendData(String command, const int timeout, boolean debug)sendData234,4872
+void startServer(){startServer266,5579
+void checkUserCommand(String command){checkUserCommand288,6231
+
+DRV8825.h,35
+#define DRV8825_HDRV8825_H11,308
+
+DRV8834.h,35
+#define DRV8834_HDRV8834_H11,320
